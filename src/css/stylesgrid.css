@@ -1,0 +1,292 @@
+
+.header {
+  position: relative;
+  width: 86%;
+  padding: 20px 10%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: rgba(0, 139, 139, 0.893);
+  z-index: 100;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+}
+
+.container a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s;
+  margin: 10px 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.container a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.container a:hover,
+.container a.active {
+  color: black;
+}
+
+.about {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #f2f2f2;
+}
+
+.about-content {
+  max-width: 480px;
+  font-size: 25px;
+  font-weight: 100;
+  color: rgb(2, 134, 152);
+}
+
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline;
+}
+
+.btn a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  background-color: rgba(0, 139, 139, 0.519);
+}
+
+table {
+  width: 480px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.contactme {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+fieldset {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.greece {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greece-paragraph {
+  display: grid;
+  align-items: center;
+  padding: 0 10%;
+  max-width: 480px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.Japan {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+  height: 500px;
+}
+
+.japan-paragrapgh {
+  display: grid;
+  align-items: center;
+  padding: 0 10%;
+  max-width: 480px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-icons {
+  margin-bottom: 20px;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+#subscribe-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#subscribe-btn:hover {
+  background-color: #555;
+}
+
+.home-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-paragraph {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  max-width: 480px;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .container a {
+    font-size: 16px;
+  }
+
+  .container a:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .about {
+    padding: 0 10px;
+  }
+
+  .about-content {
+    font-size: 20px;
+  }
+
+  .about-content h1 {
+    font-size: 40px;
+  }
+
+  .btn a {
+    font-size: 16px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .contactme,
+  fieldset {
+    font-size: 16px;
+  }
+
+  .greece-paragraph,
+  .japan-paragrapgh {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .Japan {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .contact-icons a {
+    font-size: 16px;
+  }
+
+  #subscribe-btn {
+    padding: 8px 16px;
+  }
+
+  .home-body {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .home-paragraph {
+    font-size: 16px;
+  }
+}
+
+
